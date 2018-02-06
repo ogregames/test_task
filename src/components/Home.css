@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+.list-part{
+    width: 40%;
+    height: 90%;
+    float: left;
+}
+.map-part{
+    width: 60%;   
+    height: 90%;    
+    float: left;
+    margin: 0;
+    padding: 1%;
+    border-color: #111;
+}
+.navbar-nav {
+    margin: 0;
+    padding: 7.5px 15px;
+}
+.err-server{
+	text-align: right;
+}
+
+
+
+
