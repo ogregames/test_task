@@ -44,7 +44,6 @@ const PointsListReducer = (state = initialState, action) => {
     }
 
     case ADD_POINT:
-      console.log(action.payload);
       let i = 1;
       for( ; i<100; ++i){
         if(!state.list.find(val => val.name === nameTemplate+i))break;

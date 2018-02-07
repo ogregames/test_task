@@ -20,7 +20,7 @@ class PointsList extends React.Component{
     if (newPlace.value && this.props.ymaps) {
       this.props.ymaps.geocode(newPlace.value)
         .then(result => {
-          if(result.geoObjects.get(0).geometry){
+          if(result.geoObjects.get(0)){
             this.props.dispatch(addPoint({desc: newPlace.value,
             gps: result.geoObjects.get(0).geometry.getCoordinates()}));
             newPlace.value =  '';      
